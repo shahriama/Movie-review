@@ -1,0 +1,111 @@
+body{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.movie-app > .row{
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.image-container{
+  position: relative;
+  transition: transform 0.2s;
+  padding-bottom: 100px;
+}
+
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay{
+  opacity: 1;
+}
+
+.overlay{
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.title{
+  position: absolute;
+  top: 470px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.popup{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #141414;
+}
+
+.content{
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+  padding: 25px;
+  overflow-x: scroll;
+}
+
+.popup h2{
+  font-weight: 600;
+  font-size: 28px;
+}
+
+span{
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.rating{
+  margin-bottom: 30px;
+}
+
+.plot{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px 30px;
+}
+
+.popup img{
+  flex: 1 1 50%;
+  max-width: 300px;
+  padding: 0px 15px;
+}
+
+.popup p{
+  flex: 1 1 50%;
+  padding: 15px;
+  font-weight: 500;
+}
+
+.close{
+  display: inline-block;
+	padding: 15px 30px;
+	font-size: 18px;
+	font-weight: 700;
+
+	background: #4484C4;
+	color: #FFF;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	appearance: none;
+	cursor: pointer;
+
+	transition: 0.4s ease-out;
+}
+
